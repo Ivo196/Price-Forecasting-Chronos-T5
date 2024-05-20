@@ -1,0 +1,15 @@
+dataset:
+  train: ./bitcoin_prices.arrow
+  validation: ./bitcoin_prices.arrow
+
+model:
+  name: chronos-t5-small
+  random_init: false
+
+training:
+  learning_rate: 0.0001
+  num_train_steps: 10000
+  batch_size: 32
+  eval_interval: 1000
+  save_steps: 1000
+  save_total_limit: 3
